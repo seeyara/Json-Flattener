@@ -1,0 +1,7 @@
+server:
+  type: simple
+  applicationContextPath: /application
+  requestLog:
+    type: external
+logging:
+  type: external

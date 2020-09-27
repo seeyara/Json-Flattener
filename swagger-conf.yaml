@@ -1,0 +1,4 @@
+---
+url: "127.0.0.1:8080/swagger.io/v2/swagger.json"
+dom_id: "#swagger-ui"
+validatorUrl: "https://validator.swagger.io/validator"
