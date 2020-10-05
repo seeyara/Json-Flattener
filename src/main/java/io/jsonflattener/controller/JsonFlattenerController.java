@@ -22,8 +22,11 @@ public class JsonFlattenerController {
         return Response.ok(flattenerService.flattenJson(input)).build();
     }
 
-    @GET
-    public String flattenJson() throws Exception {
-        return "UP";
+    @PUT
+    @Path("/unflatten")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response unflattenJson(String input) throws Exception {
+        return Response.ok(flattenerService.unflattenJson(input)).build();
     }
 }
